@@ -70,17 +70,17 @@
     cursor: pointer;
 }
 
-.main__menu__link_with-arrow, .main__menu__language, .main__menu__auth {
+.main__menu__link_with-arrow, .main__menu__language, .main__menu__auth, .tel__language {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.main__menu__language {
+.main__menu__language, .tel__language {
     cursor: pointer;
 }
 
-.main__menu__arrow {
+.main__menu__arrow, .tel__arrow {
     display: block;
     width: 10px;
     height: 10px;
@@ -344,5 +344,104 @@
     width: 100%;
 }
 
+.for_teachers {
+    position: relative;
+    min-height: 100vh;
+    background: linear-gradient(180deg, #418FD8 25%, rgba(85, 135, 193, 0) 99.24%);
+}
 
+.for_teachers__bg {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    z-index: 1;
+}
 
+.for_teachers__content {
+    margin-top: 10px;
+    padding: 0 0px 0px 160px;
+    display: flex;
+    position: relative;
+    z-index: 2;
+}
+
+.for_teachers__form {
+    width: 666px;
+    height: 745px;
+    background: rgba(183, 200, 217, 0.8);
+    border-radius: 54px;
+    padding: 130px 90px 95px 90px;
+}
+
+.for_teachers__text {
+    margin-left: 95px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.for_teachers__text__title {
+    font-weight: 800;
+    font-size: 50px;
+    line-height: 61px;
+    color: #FFFFFF;
+}
+
+.for_teachers__text__subtitle{
+    font-weight: 300;
+    font-size: 40px;
+    line-height: 48px;
+    color: #FFFFFF;
+}
+
+.input_form {
+    padding-left: 48px;
+    width: 488px;
+    height: 86px;
+    background: #D9D9D9;
+    border-radius: 16px;
+    font-weight: 300;
+    font-size: 25px;
+    line-height: 30px;
+    color: #000000;
+    margin-bottom: 50px;
+    border: none;
+    position: relative;
+}
+
+.input_form::placeholder {
+    font-weight: 300;
+    font-size: 25px;
+    line-height: 30px;
+    color: #000000;
+}
+
+.form_btn {
+    margin: 0 auto;
+    background-color: transparent;
+    font-weight: 300;
+    font-size: 30px;
+    line-height: 36px;
+    display: flex;
+    text-decoration-line: underline;
+    border: none;
+    cursor: pointer;
+    color: #000000;
+}
+
+.tel__wrap {
+    position: relative;
+}
+
+.tel__language {
+    position: absolute;
+    top: 25px;
+    right: 25px;
+}
+
+.tel__arrow {
+    transform: rotate(45deg);
+    border-right: 2px solid black;
+    border-bottom: 2px solid black;
+}
